@@ -1,0 +1,76 @@
+{
+  "id": "retail-002",
+  "name": "Customer Churn Increase",
+  "category": "retail",
+  "question": "Why did customer churn increase from 3% to 5%?",
+  "context": {
+    "industry": "retail",
+    "data_available": ["customer_transactions", "support_tickets", "product_returns"],
+    "stakeholders": ["VP Customer Success", "CPO"],
+    "urgency": "high"
+  },
+  "expected": {
+    "intent_understanding": {
+      "problem_type": "diagnostic",
+      "stakeholders": ["Customer Success", "Product"],
+      "decision_type": "Operational",
+      "score": 9
+    },
+    "workflow_selection": {
+      "selected": "root-cause",
+      "reasoning": "Investigating why churn increased",
+      "score": 10
+    },
+    "hypotheses": {
+      "count": "4-6",
+      "types": ["causal", "segmentation"],
+      "testable": true,
+      "evidence_based": true,
+      "score": 8
+    },
+    "data_requirements": {
+      "critical": ["customer_activity", "support_interactions", "product_feedback"],
+      "important": ["competitor_offerings", "price_changes"],
+      "columns_specified": true,
+      "score": 8
+    },
+    "statistical_methods": {
+      "methods": ["survival_analysis", "logistic_regression", "cohort_analysis"],
+      "appropriate": true,
+      "assumptions_listed": true,
+      "score": 8
+    },
+    "kpi_reasoning": {
+      "primary_metric": "Churn Rate",
+      "equation": "Churn Rate = Customers Lost / Customers at Start",
+      "decomposition": true,
+      "mathematical_insight": "CLV = ARPU / Churn, so churn increase directly reduces customer lifetime value",
+      "score": 9
+    },
+    "recommendations": {
+      "count": "3-5",
+      "prioritized": true,
+      "impact_assessed": true,
+      "risk_assessed": true,
+      "score": 8
+    },
+    "explainability": {
+      "evidence_chains": true,
+      "reasoning_steps": true,
+      "assumptions_stated": true,
+      "limitations_acknowledged": true,
+      "score": 9
+    },
+    "hallucination_rate": {
+      "unsupported_claims": 0,
+      "confidence_adjusted": true,
+      "score": 10
+    },
+    "business_usefulness": {
+      "question_answered": true,
+      "decision_supported": true,
+      "actionable_next_steps": true,
+      "score": 9
+    }
+  }
+}

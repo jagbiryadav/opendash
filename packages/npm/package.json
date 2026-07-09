@@ -1,0 +1,38 @@
+{
+  "name": "@opendash-ai/cli",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenDash - AI-powered data Analyst/scientist agent for the terminal",
+  "license": "MIT",
+  "author": "Jagbir Yadav",
+  "homepage": "https://opendashai.netlify.app/analyst",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagbiryadav/opendash.git"
+  },
+  "keywords": [
+    "ai",
+    "coding",
+    "agent",
+    "cli",
+    "opendash",
+    "mimo"
+  ],
+  "bin": {
+    "opendash": "bin/opendash",
+    "analyst": "bin/opendash"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
+  },
+  "optionalDependencies": {
+    "@opendash-ai/opendash-darwin-arm64": "0.1.0",
+    "@opendash-ai/opendash-darwin-x64": "0.1.0",
+    "@opendash-ai/opendash-linux-arm64": "0.1.0",
+    "@opendash-ai/opendash-linux-arm64-musl": "0.1.0",
+    "@opendash-ai/opendash-linux-x64": "0.1.0",
+    "@opendash-ai/opendash-linux-x64-musl": "0.1.0",
+    "@opendash-ai/opendash-windows-arm64": "0.1.0",
+    "@opendash-ai/opendash-windows-x64": "0.1.0"
+  }
+}

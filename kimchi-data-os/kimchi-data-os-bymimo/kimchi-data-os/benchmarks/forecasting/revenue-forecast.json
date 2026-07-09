@@ -1,0 +1,76 @@
+{
+  "id": "forecasting-001",
+  "name": "Revenue Forecast",
+  "category": "forecasting",
+  "question": "Forecast revenue for next quarter",
+  "context": {
+    "industry": "saas",
+    "data_available": ["historical_revenue", "marketing_spend", "customer_data"],
+    "stakeholders": ["CFO", "VP Sales"],
+    "urgency": "medium"
+  },
+  "expected": {
+    "intent_understanding": {
+      "problem_type": "predictive",
+      "stakeholders": ["Finance", "Sales"],
+      "decision_type": "Financial",
+      "score": 9
+    },
+    "workflow_selection": {
+      "selected": "forecasting",
+      "reasoning": "Problem involves temporal prediction",
+      "score": 10
+    },
+    "hypotheses": {
+      "count": "2-4",
+      "types": ["temporal", "causal"],
+      "testable": true,
+      "evidence_based": true,
+      "score": 8
+    },
+    "data_requirements": {
+      "critical": ["historical_revenue", "seasonality_factors"],
+      "important": ["marketing_spend", "economic_indicators"],
+      "columns_specified": true,
+      "score": 8
+    },
+    "statistical_methods": {
+      "methods": ["time_series_decomposition", "ARIMA", "prophet", "regression"],
+      "appropriate": true,
+      "assumptions_listed": true,
+      "score": 8
+    },
+    "kpi_reasoning": {
+      "primary_metric": "Revenue",
+      "equation": "Revenue = Customers × ARPU",
+      "decomposition": true,
+      "mathematical_insight": "Forecast should consider customer growth and ARPU trends separately",
+      "score": 9
+    },
+    "recommendations": {
+      "count": "3-5",
+      "prioritized": true,
+      "impact_assessed": true,
+      "risk_assessed": true,
+      "score": 8
+    },
+    "explainability": {
+      "evidence_chains": true,
+      "reasoning_steps": true,
+      "assumptions_stated": true,
+      "limitations_acknowledged": true,
+      "score": 9
+    },
+    "hallucination_rate": {
+      "unsupported_claims": 0,
+      "confidence_adjusted": true,
+      "score": 10
+    },
+    "business_usefulness": {
+      "question_answered": true,
+      "decision_supported": true,
+      "actionable_next_steps": true,
+      "score": 9
+    }
+  }
+}

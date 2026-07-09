@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+ts-dist/
+*.tgz
+*.bun-build
+tsconfig.tsbuildinfo
+
+# Runtime
+.sst/
+.sst/
+.sst-env.d.ts
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Session.vim
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temp
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Turbo
+.turbo/
+
+# Local dev
+opencode-dev/
+.playground/
+scripts/
+
+# Agent files
+.claude/
+.mimocode/
+.mimo-worktrees/
+.codex/
+*.pid
+
+# Experiment artifacts
+experiment/*.log
+experiment/last-outcome.json
+/experiment
+
+# Internal
+/mimoapi/
+/packages/opencode/src/ext
+serena/
+.serena/
+result/
+refs/
+a.out
+target/
+.scripts/
+.direnv/

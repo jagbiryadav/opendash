@@ -1,0 +1,76 @@
+{
+  "id": "retail-001",
+  "name": "Retail Sales Decline",
+  "category": "retail",
+  "question": "Sales dropped by 18% last quarter",
+  "context": {
+    "industry": "retail",
+    "data_available": ["sales", "marketing", "inventory"],
+    "stakeholders": ["VP Sales", "CFO"],
+    "urgency": "high"
+  },
+  "expected": {
+    "intent_understanding": {
+      "problem_type": "diagnostic",
+      "stakeholders": ["Sales", "Finance"],
+      "decision_type": "Operational",
+      "score": 9
+    },
+    "workflow_selection": {
+      "selected": "root-cause",
+      "reasoning": "Problem is diagnostic - investigating why something happened",
+      "score": 10
+    },
+    "hypotheses": {
+      "count": "4-6",
+      "types": ["temporal", "causal", "correlational"],
+      "testable": true,
+      "evidence_based": true,
+      "score": 8
+    },
+    "data_requirements": {
+      "critical": ["marketing_spend", "inventory_levels"],
+      "important": ["competitor_pricing", "customer_satisfaction"],
+      "columns_specified": true,
+      "score": 8
+    },
+    "statistical_methods": {
+      "methods": ["time_series_decomposition", "regression", "correlation"],
+      "appropriate": true,
+      "assumptions_listed": true,
+      "score": 8
+    },
+    "kpi_reasoning": {
+      "primary_metric": "Revenue",
+      "equation": "Revenue = Traffic × Conversion × AOV",
+      "decomposition": true,
+      "mathematical_insight": true,
+      "score": 9
+    },
+    "recommendations": {
+      "count": "3-5",
+      "prioritized": true,
+      "impact_assessed": true,
+      "risk_assessed": true,
+      "score": 8
+    },
+    "explainability": {
+      "evidence_chains": true,
+      "reasoning_steps": true,
+      "assumptions_stated": true,
+      "limitations_acknowledged": true,
+      "score": 9
+    },
+    "hallucination_rate": {
+      "unsupported_claims": 0,
+      "confidence_adjusted": true,
+      "score": 10
+    },
+    "business_usefulness": {
+      "question_answered": true,
+      "decision_supported": true,
+      "actionable_next_steps": true,
+      "score": 9
+    }
+  }
+}

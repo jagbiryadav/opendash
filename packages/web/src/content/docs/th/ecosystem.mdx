@@ -1,0 +1,78 @@
+﻿---
+title: ระบบนิเวศ
+description: โปรเจ็กต์และการผสานรวมที่สร้างด้วย OpenDash
+---
+
+ชุดโครงการชุมชนที่สร้างขึ้นบน OpenDash
+
+:::note
+ต้องการเพิ่มโครงการที่เกี่ยวข้องกับ OpenDash ของคุณลงในรายการนี้หรือไม่ ส่งพีอาร์.
+:::
+
+คุณยังสามารถลองดู [awesome-opendash](https://github.com/awesome-opendash/awesome-opendash) และ [opendash.cafe](https://opendash.cafe) ซึ่งเป็นชุมชนที่รวบรวมระบบนิเวศและชุมชนไว้ด้วยกัน
+
+---
+
+## ปลั๊กอิน
+
+| ชื่อ                                                                                               | คำอธิบาย                                                                                                              |
+| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| [opendash-daytona](https://github.com/daytonaio/daytona/tree/main/libs/opendash-plugin)            | เรียกใช้เซสชัน OpenDash โดยอัตโนมัติในแซนด์บ็อกซ์ Daytona ที่แยกออกมาพร้อม git sync และการแสดงตัวอย่างแบบสด           |
+| [opendash-helicone-session](https://github.com/H2Shami/opendash-helicone-session)                  | แทรกส่วนหัวเซสชัน Helicone โดยอัตโนมัติสำหรับการจัดกลุ่มคำขอ                                                          |
+| [opendash-type-inject](https://github.com/nick-vi/opendash-type-inject)                            | ฉีดประเภท TypeScript/Svelte ลงในไฟล์ที่อ่านโดยอัตโนมัติด้วยเครื่องมือค้นหา                                            |
+| [opendash-openai-codex-auth](https://github.com/numman-ali/opendash-openai-codex-auth)             | ใช้การสมัครสมาชิก ChatGPT Plus/Pro แทนเครดิต API                                                                      |
+| [opendash-gemini-auth](https://github.com/jenslys/opendash-gemini-auth)                            | ใช้แผน Gemini ที่มีอยู่ของคุณแทนการเรียกเก็บเงิน API                                                                  |
+| [opendash-antigravity-auth](https://github.com/NoeFabris/opendash-antigravity-auth)                | ใช้โมเดลฟรีของ Antigravity แทนการเรียกเก็บเงิน API                                                                    |
+| [opendash-devcontainers](https://github.com/athal7/opendash-devcontainers)                         | การแยกคอนเทนเนอร์ Devcontainer แบบหลายสาขาพร้อมโคลนแบบตื้นและพอร์ตที่กำหนดอัตโนมัติ                                   |
+| [opendash-google-antigravity-auth](https://github.com/shekohex/opendash-google-antigravity-auth)   | ปลั๊กอิน Google Antigravity OAuth พร้อมรองรับ Google Search และการจัดการ API ที่แข็งแกร่งยิ่งขึ้น                     |
+| [opendash-dynamic-context-pruning](https://github.com/Tarquinen/opendash-dynamic-context-pruning)  | ปรับการใช้โทเค็นให้เหมาะสมโดยการตัดเอาท์พุตของเครื่องมือที่ล้าสมัย                                                    |
+| [opendash-vibeguard](https://github.com/inkdust2021/opendash-vibeguard)                            | ปกปิดความลับ/PII เป็นตัวยึดตำแหน่งแบบ VibeGuard ก่อนการเรียก LLM และกู้คืนในเครื่อง                                   |
+| [opendash-websearch-cited](https://github.com/ghoulr/opendash-websearch-cited.git)                 | เพิ่มการสนับสนุนการค้นหาเว็บแบบเนทีฟสำหรับผู้ให้บริการที่รองรับด้วยรูปแบบที่มีเหตุผลของ Google                        |
+| [opendash-pty](https://github.com/shekohex/opendash-pty.git)                                       | ช่วยให้ตัวแทน AI สามารถเรียกใช้กระบวนการเบื้องหลังใน PTY และส่งข้อมูลเชิงโต้ตอบให้พวกเขาได้                           |
+| [opendash-shell-strategy](https://github.com/JRedeker/opendash-shell-strategy)                     | คำแนะนำสำหรับคำสั่ง shell แบบไม่โต้ตอบ - ป้องกันการแฮงค์จากการดำเนินการที่ขึ้นอยู่กับ TTY                             |
+| [opendash-wakatime](https://github.com/angristan/opendash-wakatime)                                | ติดตามการใช้งาน OpenDash ด้วย Wakatime                                                                                |
+| [opendash-md-table-formatter](https://github.com/franlol/opendash-md-table-formatter/tree/main)    | ทำความสะอาดตาราง Markdown ที่ผลิตโดย LLM                                                                              |
+| [opendash-morph-plugin](https://github.com/morphllm/opendash-morph-plugin)                         | การแก้ไข Fast Apply, การค้นหาโค้ดเบส WarpGrep และการบีบอัดบริบทผ่าน Morph                                             |
+| [oh-my-opendash](https://github.com/code-yeongyu/oh-my-opendash)                                   | ตัวแทนเบื้องหลัง, เครื่องมือ LSP/AST/MCP ที่สร้างไว้ล่วงหน้า, ตัวแทนที่ได้รับการดูแลจัดการ, เข้ากันได้กับ Claude Code |
+| [opendash-notificator](https://github.com/panta82/opendash-notificator)                            | การแจ้งเตือนบนเดสก์ท็อปและเสียงเตือนสำหรับเซสชัน OpenDash                                                             |
+| [opendash-notifier](https://github.com/mohak34/opendash-notifier)                                  | การแจ้งเตือนบนเดสก์ท็อปและเสียงเตือนสำหรับการอนุญาต การดำเนินการเสร็จสิ้น และเหตุการณ์ข้อผิดพลาด                      |
+| [opendash-zellij-namer](https://github.com/24601/opendash-zellij-namer)                            | การตั้งชื่อเซสชัน Zellij อัตโนมัติที่ขับเคลื่อนด้วย AI ตามบริบทของ OpenDash                                           |
+| [opendash-skillful](https://github.com/zenobi-us/opendash-skillful)                                | อนุญาตให้ตัวแทน OpenDash โหลดแบบ Lazy Load ตามความต้องการพร้อมการค้นพบทักษะและการแทรก                                 |
+| [opendash-supermemory](https://github.com/supermemoryai/opendash-supermemory)                      | หน่วยความจำถาวรตลอดเซสชันโดยใช้ Supermemory                                                                           |
+| [@plannotator/opendash](https://github.com/backnotprop/plannotator/tree/main/apps/opendash-plugin) | การตรวจสอบแผนเชิงโต้ตอบพร้อมคำอธิบายประกอบแบบภาพและการแชร์ส่วนตัว/offline                                             |
+| [@openspoon/subtask2](https://github.com/spoons-and-mirrors/subtask2)                              | ขยาย opendash /commands ไปสู่ระบบการประสานที่มีประสิทธิภาพพร้อมการควบคุมโฟลว์แบบละเอียด                               |
+| [opendash-scheduler](https://github.com/different-ai/opendash-scheduler)                           | กำหนดเวลางานที่เกิดซ้ำโดยใช้ launchd (Mac) หรือ systemd (Linux) ด้วยไวยากรณ์ cron                                     |
+| [micode](https://github.com/vtemian/micode)                                                        | ระดมความคิดอย่างมีโครงสร้าง → วางแผน → นำเวิร์กโฟลว์ไปใช้ด้วยความต่อเนื่องของเซสชัน                                   |
+| [octto](https://github.com/vtemian/octto)                                                          | UI เบราว์เซอร์แบบโต้ตอบสำหรับการระดมความคิด AI ด้วยแบบฟอร์มคำถามหลายข้อ                                               |
+| [opendash-background-agents](https://github.com/kdcokenny/opendash-background-agents)              | เอเจนต์พื้นหลังสไตล์ Claude Code พร้อมการมอบหมายแบบอะซิงก์และการคงอยู่ของบริบท                                        |
+| [opendash-notify](https://github.com/kdcokenny/opendash-notify)                                    | การแจ้งเตือนระบบปฏิบัติการดั้งเดิมสำหรับ OpenDash – ทราบเมื่องานเสร็จสมบูรณ์                                          |
+| [opendash-workspace](https://github.com/kdcokenny/opendash-workspace)                              | ชุดสายรัดประสานหลายเอเจนต์ที่ให้มา – ส่วนประกอบ 16 ชิ้น ติดตั้งเพียงครั้งเดียว                                        |
+| [opendash-worktree](https://github.com/kdcokenny/opendash-worktree)                                | เวิร์กทรีคอมไพล์ไร้แรงเสียดทานสำหรับ OpenDash                                                                         |
+| [opendash-sentry-monitor](https://github.com/stolinski/opendash-sentry-monitor)                    | ติดตามและแก้ไขข้อบกพร่องเอเจนต์ AI ของคุณด้วย Sentry AI Monitoring                                                    |
+
+---
+
+## โครงการ
+
+| ชื่อ                                                                                       | คำอธิบาย                                                                  |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------- |
+| [kimaki](https://github.com/remorses/kimaki)                                               | บอท Discord เพื่อควบคุมเซสชัน OpenDash สร้างขึ้นบน SDK                    |
+| [opendash.nvim](https://github.com/NickvanDyke/opendash.nvim)                              | ปลั๊กอิน Neovim สำหรับข้อความแจ้งที่ทราบโดยบรรณาธิการ ซึ่งสร้างขึ้นบน API |
+| [portal](https://github.com/hosenur/portal)                                                | UI เว็บบนมือถือเป็นครั้งแรกสำหรับ OpenDash บน Tailscale/VPN               |
+| [opendash plugin template](https://github.com/zenobi-us/opendash-plugin-template/)         | เทมเพลตสำหรับสร้างปลั๊กอิน OpenDash                                       |
+| [opendash.nvim](https://github.com/sudo-tee/opendash.nvim)                                 | ส่วนหน้า Neovim สำหรับ opendash - เอเจนต์การเข้ารหัส AI ที่ใช้ terminal   |
+| [ai-sdk-provider-opendash-sdk](https://github.com/ben-vargas/ai-sdk-provider-opendash-sdk) | ผู้ให้บริการ Vercel AI SDK สำหรับการใช้งาน OpenDash ผ่าน @mimo-ai/sdk |
+| [OpenChamber](https://github.com/btriapitsyn/openchamber)                                  | แอพเว็บ / เดสก์ท็อปและส่วนขยาย VS Code สำหรับ OpenDash                    |
+| [OpenDash-Obsidian](https://github.com/mtymek/opendash-obsidian)                           | ปลั๊กอิน Obsidian ที่ฝัง OpenDash ไว้ใน UI ของ Obsidian                   |
+| [OpenWork](https://github.com/different-ai/openwork)                                       | ทางเลือกโอเพ่นซอร์สแทน Claude Cowork ซึ่งขับเคลื่อนโดย OpenDash           |
+| [ocx](https://github.com/kdcokenny/ocx)                                                    | ตัวจัดการส่วนขยาย OpenDash พร้อมโปรไฟล์แบบพกพาและแยกส่วน                  |
+| [CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad)                                   | แอปเดสก์ท็อป เว็บ มือถือ และไคลเอ็นต์ระยะไกลสำหรับ OpenDash               |
+
+---
+
+## ตัวแทน
+
+| ชื่อ                                                              | คำอธิบาย                                                                 |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Agentic](https://github.com/Cluster444/agentic)                  | เอเจนต์ AI แบบแยกส่วนและคำสั่งสำหรับการพัฒนาแบบมีโครงสร้าง               |
+| [opendash-agents](https://github.com/darrenhinde/opendash-agents) | กำหนดค่า พรอมต์ เอเจนต์ และปลั๊กอินสำหรับเวิร์กโฟลว์ที่ได้รับการปรับปรุง |

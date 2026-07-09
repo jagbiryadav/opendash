@@ -1,0 +1,81 @@
+﻿---
+title: Ecosystem
+description: Projects and integrations built with OpenDash.
+---
+
+A collection of community projects built on OpenDash.
+
+:::note
+Want to add your OpenDash related project to this list? Submit a PR.
+:::
+
+You can also check out [awesome-opendash](https://github.com/awesome-opendash/awesome-opendash) and [opendash.cafe](https://opendash.cafe), a community that aggregates the ecosystem and community.
+
+---
+
+## Plugins
+
+| Name                                                                                               | Description                                                                                       |
+| -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| [opendash-daytona](https://github.com/daytonaio/daytona/tree/main/libs/opendash-plugin)            | Automatically run OpenDash sessions in isolated Daytona sandboxes with git sync and live previews |
+| [opendash-helicone-session](https://github.com/H2Shami/opendash-helicone-session)                  | Automatically inject Helicone session headers for request grouping                                |
+| [opendash-type-inject](https://github.com/nick-vi/opendash-type-inject)                            | Auto-inject TypeScript/Svelte types into file reads with lookup tools                             |
+| [opendash-openai-codex-auth](https://github.com/numman-ali/opendash-openai-codex-auth)             | Use your ChatGPT Plus/Pro subscription instead of API credits                                     |
+| [opendash-gemini-auth](https://github.com/jenslys/opendash-gemini-auth)                            | Use your existing Gemini plan instead of API billing                                              |
+| [opendash-antigravity-auth](https://github.com/NoeFabris/opendash-antigravity-auth)                | Use Antigravity's free models instead of API billing                                              |
+| [opendash-devcontainers](https://github.com/athal7/opendash-devcontainers)                         | Multi-branch devcontainer isolation with shallow clones and auto-assigned ports                   |
+| [opendash-google-antigravity-auth](https://github.com/shekohex/opendash-google-antigravity-auth)   | Google Antigravity OAuth Plugin, with support for Google Search, and more robust API handling     |
+| [opendash-dynamic-context-pruning](https://github.com/Tarquinen/opendash-dynamic-context-pruning)  | Optimize token usage by pruning obsolete tool outputs                                             |
+| [opendash-vibeguard](https://github.com/inkdust2021/opendash-vibeguard)                            | Redact secrets/PII into VibeGuard-style placeholders before LLM calls; restore locally            |
+| [opendash-websearch-cited](https://github.com/ghoulr/opendash-websearch-cited.git)                 | Add native websearch support for supported providers with Google grounded style                   |
+| [opendash-pty](https://github.com/shekohex/opendash-pty.git)                                       | Enables AI agents to run background processes in a PTY, send interactive input to them.           |
+| [opendash-shell-strategy](https://github.com/JRedeker/opendash-shell-strategy)                     | Instructions for non-interactive shell commands - prevents hangs from TTY-dependent operations    |
+| [opendash-wakatime](https://github.com/angristan/opendash-wakatime)                                | Track OpenDash usage with Wakatime                                                                |
+| [opendash-md-table-formatter](https://github.com/franlol/opendash-md-table-formatter/tree/main)    | Clean up markdown tables produced by LLMs                                                         |
+| [opendash-morph-fast-apply](https://github.com/JRedeker/opendash-morph-fast-apply)                 | 10x faster code editing with Morph Fast Apply API and lazy edit markers                           |
+| [opendash-morph-plugin](https://github.com/morphllm/opendash-morph-plugin)                         | Fast Apply editing, WarpGrep codebase search, and context compaction via Morph                    |
+| [oh-my-opendash](https://github.com/code-yeongyu/oh-my-opendash)                                   | Background agents, pre-built LSP/AST/MCP tools, curated agents, Claude Code compatible            |
+| [opendash-notificator](https://github.com/panta82/opendash-notificator)                            | Desktop notifications and sound alerts for OpenDash sessions                                      |
+| [opendash-notifier](https://github.com/mohak34/opendash-notifier)                                  | Desktop notifications and sound alerts for permission, completion, and error events               |
+| [opendash-zellij-namer](https://github.com/24601/opendash-zellij-namer)                            | AI-powered automatic Zellij session naming based on OpenDash context                              |
+| [opendash-skillful](https://github.com/zenobi-us/opendash-skillful)                                | Allow OpenDash agents to lazy load prompts on demand with skill discovery and injection           |
+| [opendash-supermemory](https://github.com/supermemoryai/opendash-supermemory)                      | Persistent memory across sessions using Supermemory                                               |
+| [@plannotator/opendash](https://github.com/backnotprop/plannotator/tree/main/apps/opendash-plugin) | Interactive plan review with visual annotation and private/offline sharing                        |
+| [@openspoon/subtask2](https://github.com/spoons-and-mirrors/subtask2)                              | Extend opendash /commands into a powerful orchestration system with granular flow control         |
+| [opendash-scheduler](https://github.com/different-ai/opendash-scheduler)                           | Schedule recurring jobs using launchd (Mac) or systemd (Linux) with cron syntax                   |
+| [opendash-conductor](https://github.com/derekbar90/opendash-conductor)                             | Protocol-Driven Workflow: Automation of the Context -> Spec -> Plan -> Implement lifecycle.       |
+| [micode](https://github.com/vtemian/micode)                                                        | Structured Brainstorm → Plan → Implement workflow with session continuity                         |
+| [octto](https://github.com/vtemian/octto)                                                          | Interactive browser UI for AI brainstorming with multi-question forms                             |
+| [opendash-background-agents](https://github.com/kdcokenny/opendash-background-agents)              | Claude Code-style background agents with async delegation and context persistence                 |
+| [opendash-notify](https://github.com/kdcokenny/opendash-notify)                                    | Native OS notifications for OpenDash – know when tasks complete                                   |
+| [opendash-workspace](https://github.com/kdcokenny/opendash-workspace)                              | Bundled multi-agent orchestration harness – 16 components, one install                            |
+| [opendash-worktree](https://github.com/kdcokenny/opendash-worktree)                                | Zero-friction git worktrees for OpenDash                                                          |
+| [opendash-sentry-monitor](https://github.com/stolinski/opendash-sentry-monitor)                    | Trace and debug your AI agents with Sentry AI Monitoring                                          |
+| [opendash-firecrawl](https://github.com/firecrawl/opendash-firecrawl)                              | Web scraping, crawling, and search via the Firecrawl CLI                                          |
+
+---
+
+## Projects
+
+| Name                                                                                       | Description                                                      |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| [kimaki](https://github.com/remorses/kimaki)                                               | Discord bot to control OpenDash sessions, built on the SDK       |
+| [opendash.nvim](https://github.com/NickvanDyke/opendash.nvim)                              | Neovim plugin for editor-aware prompts, built on the API         |
+| [portal](https://github.com/hosenur/portal)                                                | Mobile-first web UI for OpenDash over Tailscale/VPN              |
+| [opendash plugin template](https://github.com/zenobi-us/opendash-plugin-template/)         | Template for building OpenDash plugins                           |
+| [opendash.nvim](https://github.com/sudo-tee/opendash.nvim)                                 | Neovim frontend for opendash - a terminal-based AI coding agent  |
+| [ai-sdk-provider-opendash-sdk](https://github.com/ben-vargas/ai-sdk-provider-opendash-sdk) | Vercel AI SDK provider for using OpenDash via @mimo-ai/sdk   |
+| [OpenChamber](https://github.com/btriapitsyn/openchamber)                                  | Web / Desktop App and VS Code Extension for OpenDash             |
+| [OpenDash-Obsidian](https://github.com/mtymek/opendash-obsidian)                           | Obsidian plugin that embeds OpenDash in Obsidian's UI            |
+| [OpenWork](https://github.com/different-ai/openwork)                                       | An open-source alternative to Claude Cowork, powered by OpenDash |
+| [ocx](https://github.com/kdcokenny/ocx)                                                    | OpenDash extension manager with portable, isolated profiles.     |
+| [CodeNomad](https://github.com/NeuralNomadsAI/CodeNomad)                                   | Desktop, Web, Mobile and Remote Client App for OpenDash          |
+
+---
+
+## Agents
+
+| Name                                                              | Description                                                  |
+| ----------------------------------------------------------------- | ------------------------------------------------------------ |
+| [Agentic](https://github.com/Cluster444/agentic)                  | Modular AI agents and commands for structured development    |
+| [opendash-agents](https://github.com/darrenhinde/opendash-agents) | Configs, prompts, agents, and plugins for enhanced workflows |

@@ -1,0 +1,232 @@
+{
+  "benchmarks": [
+    {
+      "id": "retail-001",
+      "name": "Retail Sales Decline",
+      "category": "retail",
+      "question": "Sales dropped by 18% last quarter",
+      "context": {
+        "industry": "retail",
+        "data_available": ["sales", "marketing", "inventory"],
+        "stakeholders": ["VP Sales", "CFO"],
+        "urgency": "high"
+      },
+      "expected": {
+        "intent_understanding": {
+          "problem_type": "diagnostic",
+          "stakeholders": ["Sales", "Finance"],
+          "decision_type": "Operational",
+          "score": 9
+        },
+        "workflow_selection": {
+          "selected": "root-cause",
+          "reasoning": "Problem is diagnostic - investigating why something happened",
+          "score": 10
+        },
+        "hypotheses": {
+          "count": "4-6",
+          "types": ["temporal", "causal", "correlational"],
+          "testable": true,
+          "evidence_based": true,
+          "score": 8
+        },
+        "data_requirements": {
+          "critical": ["marketing_spend", "inventory_levels"],
+          "important": ["competitor_pricing", "customer_satisfaction"],
+          "columns_specified": true,
+          "score": 8
+        },
+        "statistical_methods": {
+          "methods": ["time_series_decomposition", "regression", "correlation"],
+          "appropriate": true,
+          "assumptions_listed": true,
+          "score": 8
+        },
+        "kpi_reasoning": {
+          "primary_metric": "Revenue",
+          "equation": "Revenue = Traffic × Conversion × AOV",
+          "decomposition": true,
+          "mathematical_insight": true,
+          "score": 9
+        },
+        "recommendations": {
+          "count": "3-5",
+          "prioritized": true,
+          "impact_assessed": true,
+          "risk_assessed": true,
+          "score": 8
+        },
+        "explainability": {
+          "evidence_chains": true,
+          "reasoning_steps": true,
+          "assumptions_stated": true,
+          "limitations_acknowledged": true,
+          "score": 9
+        },
+        "hallucination_rate": {
+          "unsupported_claims": 0,
+          "confidence_adjusted": true,
+          "score": 10
+        },
+        "business_usefulness": {
+          "question_answered": true,
+          "decision_supported": true,
+          "actionable_next_steps": true,
+          "score": 9
+        }
+      }
+    },
+    {
+      "id": "retail-002",
+      "name": "Customer Churn Increase",
+      "category": "retail",
+      "question": "Why did customer churn increase from 3% to 5%?",
+      "context": {
+        "industry": "retail",
+        "data_available": ["customer_transactions", "support_tickets", "product_returns"],
+        "stakeholders": ["VP Customer Success", "CPO"],
+        "urgency": "high"
+      },
+      "expected": {
+        "intent_understanding": {
+          "problem_type": "diagnostic",
+          "stakeholders": ["Customer Success", "Product"],
+          "decision_type": "Operational",
+          "score": 9
+        },
+        "workflow_selection": {
+          "selected": "root-cause",
+          "reasoning": "Investigating why churn increased",
+          "score": 10
+        },
+        "hypotheses": {
+          "count": "4-6",
+          "types": ["causal", "segmentation"],
+          "testable": true,
+          "evidence_based": true,
+          "score": 8
+        },
+        "data_requirements": {
+          "critical": ["customer_activity", "support_interactions", "product_feedback"],
+          "important": ["competitor_offerings", "price_changes"],
+          "columns_specified": true,
+          "score": 8
+        },
+        "statistical_methods": {
+          "methods": ["survival_analysis", "logistic_regression", "cohort_analysis"],
+          "appropriate": true,
+          "assumptions_listed": true,
+          "score": 8
+        },
+        "kpi_reasoning": {
+          "primary_metric": "Churn Rate",
+          "equation": "Churn Rate = Customers Lost / Customers at Start",
+          "decomposition": true,
+          "mathematical_insight": "CLV = ARPU / Churn, so churn increase directly reduces customer lifetime value",
+          "score": 9
+        },
+        "recommendations": {
+          "count": "3-5",
+          "prioritized": true,
+          "impact_assessed": true,
+          "risk_assessed": true,
+          "score": 8
+        },
+        "explainability": {
+          "evidence_chains": true,
+          "reasoning_steps": true,
+          "assumptions_stated": true,
+          "limitations_acknowledged": true,
+          "score": 9
+        },
+        "hallucination_rate": {
+          "unsupported_claims": 0,
+          "confidence_adjusted": true,
+          "score": 10
+        },
+        "business_usefulness": {
+          "question_answered": true,
+          "decision_supported": true,
+          "actionable_next_steps": true,
+          "score": 9
+        }
+      }
+    },
+    {
+      "id": "retail-003",
+      "name": "Conversion Rate Drop",
+      "category": "retail",
+      "question": "Conversion rate dropped from 3.2% to 2.1% after website redesign",
+      "context": {
+        "industry": "ecommerce",
+        "data_available": ["web_analytics", "user_sessions", "transaction_data"],
+        "stakeholders": ["VP Product", "Head of UX"],
+        "urgency": "high"
+      },
+      "expected": {
+        "intent_understanding": {
+          "problem_type": "diagnostic",
+          "stakeholders": ["Product", "UX"],
+          "decision_type": "Operational",
+          "score": 9
+        },
+        "workflow_selection": {
+          "selected": "root-cause",
+          "reasoning": "Investigating why conversion dropped after redesign",
+          "score": 10
+        },
+        "hypotheses": {
+          "count": "4-6",
+          "types": ["causal", "segmentation"],
+          "testable": true,
+          "evidence_based": true,
+          "score": 8
+        },
+        "data_requirements": {
+          "critical": ["page_load_times", "user_flow_data", "a_b_test_results"],
+          "important": ["device_breakdown", "traffic_sources"],
+          "columns_specified": true,
+          "score": 8
+        },
+        "statistical_methods": {
+          "methods": ["chi_square_test", "logistic_regression", "funnel_analysis"],
+          "appropriate": true,
+          "assumptions_listed": true,
+          "score": 8
+        },
+        "kpi_reasoning": {
+          "primary_metric": "Conversion Rate",
+          "equation": "Conversion Rate = Orders / Sessions",
+          "decomposition": true,
+          "mathematical_insight": "Conversion = f(page_load, UX, trust, pricing)",
+          "score": 9
+        },
+        "recommendations": {
+          "count": "3-5",
+          "prioritized": true,
+          "impact_assessed": true,
+          "risk_assessed": true,
+          "score": 8
+        },
+        "explainability": {
+          "evidence_chains": true,
+          "reasoning_steps": true,
+          "assumptions_stated": true,
+          "limitations_acknowledged": true,
+          "score": 9
+        },
+        "hallucination_rate": {
+          "unsupported_claims": 0,
+          "confidence_adjusted": true,
+          "score": 10
+        },
+        "business_usefulness": {
+          "question_answered": true,
+          "decision_supported": true,
+          "actionable_next_steps": true,
+          "score": 9
+        }
+      }
+    }
+  ]
+}
